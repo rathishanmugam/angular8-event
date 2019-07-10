@@ -5,13 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import {EventDetailComponent} from "./event/event-detail.component";
+import {SessionListComponent} from "./event/session-list.component";
+import {CollapsibleWellComponent} from "./event/collapsible-well.component";
+import {AddSessionComponent} from "./event/add-session.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     EventListComponent,
-    EventDetailComponent
-
+    EventDetailComponent,
+SessionListComponent,
+    CollapsibleWellComponent,
+    AddSessionComponent
   ],
   imports: [
     BrowserModule,

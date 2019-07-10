@@ -13,7 +13,10 @@ export class EventService {
     return events.find(event => event.id === id)
   }
 
-
+  updateEvent(event){
+    let index=events.findIndex(x => x.id = event.id)
+    events[index] = event
+  }
 }
 
 const events: IEvent[] = [
@@ -33,7 +36,7 @@ const events: IEvent[] = [
     sessions: [
       {
         id: 1,
-        name: "Using cats of us",
+        name: " cats of us",
         presenter: "Peter Bacon Darwin",
         duration: 1,
         "time": "2:00",
@@ -46,7 +49,7 @@ const events: IEvent[] = [
       },
   {
     id: 2,
-    name: "Using cats of india",
+    name: "indian cats",
     presenter: "Peter Bacon Darwin",
     duration: 2,
     "time": "2:00",
@@ -217,7 +220,7 @@ const events: IEvent[] = [
   [
     {
       id: 1,
-      name: "Using whales of us",
+      name: " whales of us",
       presenter: "Peter Bacon Darwin",
       duration: 1,
       "time": "2:00",
@@ -230,7 +233,7 @@ const events: IEvent[] = [
     },
     {
       id: 2,
-      name: "Using cats of india",
+      name: " cats of india",
       presenter: "Peter Bacon Darwin",
       duration: 2,
       "time": "2:00",
