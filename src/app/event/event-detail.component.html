@@ -43,6 +43,9 @@
     <div class="col-md-2">
       <a (click)="addSession()">Add Session</a>
     </div>
+<!--    <div class="col-md-2">-->
+<!--      <a (click)="DeleteSession(event?.sessions.slice(0).)">Delete Session</a>-->
+<!--    </div>-->
   </div>
 
   <session-list [filterBy] = "filterBy" [sortBy]="sortBy" *ngIf="!addMode" [sessions]="event?.sessions"></session-list>

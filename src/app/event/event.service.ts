@@ -38,7 +38,7 @@ const events: IEvent[] = [
         id: 1,
         name: " cats of us",
         presenter: "Peter Bacon Darwin",
-        duration: 1,
+        duration: "Two Hour",
         "time": "2:00",
         show: "morning",
         abstract: `Learn all about the new pipes in Angular 4, both
@@ -51,7 +51,7 @@ const events: IEvent[] = [
     id: 2,
     name: "indian cats",
     presenter: "Peter Bacon Darwin",
-    duration: 2,
+    duration: "Two Hour",
     "time": "2:00",
     show: "evening",
     abstract: `Learn all about the new pipes in Angular 4, both
@@ -67,7 +67,7 @@ const events: IEvent[] = [
   ,
   presenter: "Peter Bacon Darwin"
   ,
-  duration: 2
+  duration:"Three Hour"
   ,
   "time": "2:00"
   ,
@@ -127,7 +127,7 @@ const events: IEvent[] = [
       id: 1,
       name: "Using cats of us",
       presenter: "Peter Bacon Darwin",
-      duration: 1,
+      duration: "Three Hour",
       "time": "7:00",
       show: "morning",
       abstract: `Learn all about the new pipes in Angular 4, both
@@ -171,7 +171,7 @@ const events: IEvent[] = [
       id: 1,
       name: "Using dogs of us",
       presenter: "Peter Bacon Darwin",
-      duration: 1,
+      duration: "Three Hour",
       "time": "7:00",
       show: "morning",
       abstract: `Learn all about the new pipes in Angular 4, both
@@ -222,7 +222,7 @@ const events: IEvent[] = [
       id: 1,
       name: " whales of us",
       presenter: "Peter Bacon Darwin",
-      duration: 1,
+      duration: "Three Hour",
       "time": "2:00",
       show: "morning",
       abstract: `Learn all about the new pipes in Angular 4, both
@@ -235,7 +235,7 @@ const events: IEvent[] = [
       id: 2,
       name: " cats of india",
       presenter: "Peter Bacon Darwin",
-      duration: 2,
+      duration: "two and half",
       "time": "2:00",
       show: "evening",
       abstract: `Learn all about the new pipes in Angular 4, both
@@ -288,7 +288,7 @@ const events: IEvent[] = [
       id: 1,
       name: "Using cats of china",
       presenter: "Peter Bacon Darwin",
-      duration: 2,
+      duration: "Three Hour",
       "time": "2:00",
       show: "night",
       abstract: `Learn all about the new pipes in Angular 4, both
@@ -333,7 +333,7 @@ const events: IEvent[] = [
       id: 1,
       name: "Using monkeys of us",
       presenter: "Peter Bacon Darwin",
-      duration: 1,
+      duration: "Two and half Hour",
       "time": "2:00",
       show: "morning",
       abstract: `Learn all about the new pipes in Angular 4, both
@@ -384,7 +384,7 @@ const events: IEvent[] = [
       id: 1,
       name: "Using cats of china",
       presenter: "Peter Bacon Darwin",
-      duration: 2,
+      duration: "one and half",
       "time": "2:00",
       show: "night",
       abstract: `Learn all about the new pipes in Angular 4, both

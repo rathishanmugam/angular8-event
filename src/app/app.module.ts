@@ -8,6 +8,7 @@ import {EventDetailComponent} from "./event/event-detail.component";
 import {SessionListComponent} from "./event/session-list.component";
 import {CollapsibleWellComponent} from "./event/collapsible-well.component";
 import {AddSessionComponent} from "./event/add-session.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ SessionListComponent,
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],

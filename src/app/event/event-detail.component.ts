@@ -19,6 +19,7 @@ export class EventDetailComponent {
               private route:ActivatedRoute){}
   ngOnInit() {
     this.event = this.eventService.getEvent(+this.route.snapshot.params['id'])
+  console.log(this.event);
   }
   addSession() {
     this.addMode = true
@@ -26,8 +27,9 @@ export class EventDetailComponent {
   saveNewSession(session:ISession) {
     const nextId = Math.max.apply(null, this.event.sessions.map(s => s.id));
     session.id = nextId + 1
+    console.log('the new event',session);
     this.event.sessions.push(session)
-    this.eventService.updateEvent(this.event)
+     this.eventService.updateEvent(this.event)
     this.addMode = false
   }
 
