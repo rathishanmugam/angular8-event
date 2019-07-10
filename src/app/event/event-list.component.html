@@ -1,0 +1,23 @@
+<div>
+  <h1>Upcoming Angular Events</h1>
+  <hr/>
+  <div class="row">
+    <div *ngFor="let event of event" class="col-md-5">
+      <div [routerLink]="['/events',event.id]" class="well hoverwell thumbnail">
+        <h2>{{event?.category | uppercase}}</h2>
+        <div>{{event?.organizer}}</div>
+        <div>{{event?.title}}</div>
+        <div>{{event?.description}}</div>
+        <div>Price: {{event?.price | currency:'USD'}}</div>
+        <div *ngIf="event?.location">
+          <span>Location: {{event?.location?.address}}</span>
+          <span class="pad-left">{{event?.location?.city}}, {{event?.location?.country}}</span>
+        </div>
+        <div *ngIf="event?.onlineUrl">
+          Online URL: {{event?.onlineUrl}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
