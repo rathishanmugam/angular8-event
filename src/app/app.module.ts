@@ -9,6 +9,10 @@ import {SessionListComponent} from "./event/session-list.component";
 import {CollapsibleWellComponent} from "./event/collapsible-well.component";
 import {AddSessionComponent} from "./event/add-session.component";
 import {ReactiveFormsModule} from "@angular/forms";
+import {UserModule} from "./user/user.module";
+import {UpvoteComponent} from "./event/upvote.component";
+import {CreateEventComponent} from "./event/create-event.component";
+import {LocationValidatorDirective} from "./event/location-validator.directive";
 
 @NgModule({
   declarations: [
@@ -17,12 +21,16 @@ import {ReactiveFormsModule} from "@angular/forms";
     EventDetailComponent,
 SessionListComponent,
     CollapsibleWellComponent,
-    AddSessionComponent
+    AddSessionComponent,
+    UpvoteComponent,
+    CreateEventComponent,
+    LocationValidatorDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    UserModule,
     AppRoutingModule
   ],
   providers: [],

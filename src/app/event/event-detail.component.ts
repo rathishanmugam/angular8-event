@@ -20,6 +20,8 @@ export class EventDetailComponent {
   ngOnInit() {
     this.event = this.eventService.getEvent(+this.route.snapshot.params['id'])
   console.log(this.event);
+    this.addMode = false
+
   }
   addSession() {
     this.addMode = true
